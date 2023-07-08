@@ -1,0 +1,84 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 3,
+    "total": 3,
+    "workspacePrefix": "/Users/xiehaijie/Desktop/Projects/FrontEnd/vite-issues/monorepo-hmr"
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "monorepo-hmr",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "/Users/xiehaijie/Desktop/Projects/FrontEnd/vite-issues/monorepo-hmr"
+  },
+  "2 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "unknown",
+      "private": true,
+      "version": "0.0.0",
+      "type": "module",
+      "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview"
+      },
+      "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "webapp-core": "workspace:0.0.0"
+      },
+      "devDependencies": {
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "^18.0.11",
+        "@vitejs/plugin-react": "^4.0.0",
+        "postcss": "^8.4.23",
+        "tailwindcss": "^3.3.2",
+        "tailwindcss-dark-mode-plugin": "^0.0.4",
+        "typescript": "^5.0.2",
+        "vite": "^4.3.2"
+      }
+    },
+    "prefix": "/Users/xiehaijie/Desktop/Projects/FrontEnd/vite-issues/monorepo-hmr/packages/webapp"
+  },
+  "3 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "webapp-core",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "/Users/xiehaijie/Desktop/Projects/FrontEnd/vite-issues/monorepo-hmr/packages/webapp-core"
+  },
+  "4 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/xiehaijie/.pnpm-store/v3",
+    "virtualStoreDir": "/Users/xiehaijie/Desktop/Projects/FrontEnd/vite-issues/monorepo-hmr/node_modules/.pnpm"
+  },
+  "5 debug pnpm:stage": {
+    "prefix": "/Users/xiehaijie/Desktop/Projects/FrontEnd/vite-issues/monorepo-hmr",
+    "stage": "resolution_started"
+  },
+  "6 error pnpm": {
+    "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "In : No matching version found for webapp-core@0.0.0 inside the workspace",
+      "code": "ERR_PNPM_NO_MATCHING_VERSION_INSIDE_WORKSPACE",
+      "stack": "pnpm: In : No matching version found for webapp-core@0.0.0 inside the workspace\n    at tryResolveFromWorkspace (/Users/xiehaijie/.nvm/versions/node/v16.15.0/lib/node_modules/pnpm/dist/pnpm.cjs:85271:15)\n    at resolveNpm (/Users/xiehaijie/.nvm/versions/node/v16.15.0/lib/node_modules/pnpm/dist/pnpm.cjs:85162:39)\n    at Object.resolve (/Users/xiehaijie/.nvm/versions/node/v16.15.0/lib/node_modules/pnpm/dist/pnpm.cjs:85394:40)\n    at ctx.requestsQueue.add.priority (/Users/xiehaijie/.nvm/versions/node/v16.15.0/lib/node_modules/pnpm/dist/pnpm.cjs:71359:75)\n    at run (/Users/xiehaijie/.nvm/versions/node/v16.15.0/lib/node_modules/pnpm/dist/pnpm.cjs:71106:90)\n    at PQueue._tryToStartAnother (/Users/xiehaijie/.nvm/versions/node/v16.15.0/lib/node_modules/pnpm/dist/pnpm.cjs:71060:13)\n    at /Users/xiehaijie/.nvm/versions/node/v16.15.0/lib/node_modules/pnpm/dist/pnpm.cjs:71119:16\n    at new Promise (<anonymous>)\n    at PQueue.add (/Users/xiehaijie/.nvm/versions/node/v16.15.0/lib/node_modules/pnpm/dist/pnpm.cjs:71101:16)\n    at resolveAndFetch (/Users/xiehaijie/.nvm/versions/node/v16.15.0/lib/node_modules/pnpm/dist/pnpm.cjs:71359:55)"
+    }
+  }
+}
